@@ -1,0 +1,53 @@
+body {
+	background-color: #f8f8f8;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.app {
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.main-header {
+	font-size: 48px;
+	font-weight: bold;
+	color: #7fb2f0;
+	margin: 30px 0 30px 0;
+	grid-column: 1 / span 2;
+}
+
+.editable-box {
+	width: 300px;
+	height: 300px;
+	background-color: #facade;
+}
+
+.ui-controls {
+	display: grid;
+	grid-row-gap: 15px;
+	background-color: white;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	width: 320px;
+}
+
+.ui-controls-header {
+	text-align: center;
+	background-color: #7fb2f0;
+	color: white;
+	font-size: 24px;
+	padding: 5px 0 5px;
+}
+
+.ui-row {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 10px;
+	height: 50px;
+}
+
+.ui-slider {
+	grid-column: 1 / span 2;
+}
