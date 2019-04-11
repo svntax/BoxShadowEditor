@@ -19,32 +19,32 @@ class App extends React.Component {
 	
 	widthSliderChanged = (event) => {
 		this.setState({width: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	heightSliderChanged = (event) => {
 		this.setState({height: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	hOffsetChanged = (event) => {
 		this.setState({hOffset: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	vOffsetChanged = (event) => {
 		this.setState({vOffset: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	blurChanged = (event) => {
 		this.setState({blur: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	spreadChanged = (event) => {
 		this.setState({spread: event.target.value});
-		this.updateBoxShadow();
+		this.updateBoxShadow(this.state.inset);
 	}
 	
 	colorChanged = (event) => {
